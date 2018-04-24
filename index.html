@@ -1,48 +1,139 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NU Data Science Bootcamp-Web Dev 12">
+    <meta name="author" content="Francisco Galliano">
+    <title>Weather Visualization Dashboard</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="custom.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-<body>
+  </head>
+  <body>  
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WeatherWith_FJG</a>
+      </div>
+      <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>       
+              <li><a href="z_index.html">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Comparisons <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                   <li class="dropdown-header">Analysis</li>
+                  <li><a href="#">Visual 1</a></li>
+                  <li><a href="#">Visual 2</a></li>
+                  <li><a href="#">Visual 3</a></li>
+                  <li><a href="#">Visual 4</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Portfolio</li>
+                  <li><a href="#">Portfolio 1</a></li>
+                  <li><a href="#">Portfolio 2</a></li>
+                </ul>
+                </li>
+                <li><a href="D_Weather.html">Data Sheet</a></li>
+                </ul>
+      </div>   
+    </div>
+</div>
 
-  <h1>FRANCISCO J GALLIANO</h1>
+        <div class="container">
+		    <div class="jumbotron text-center">
+			    <h1>Temperatures & Equator</h1>
+			    <p>NU Data Science Bootcamp Cohorts are the premium producers of data visualization</p>
+			    
+            </div>
 
-  <img src="https://placehold.it/200x200" alt="Your Name">
+            <div class="row">
+                    <div class="col-md-12">
+                            <h3>Weather Around the World</h3>
+                            <p>Project entailed developing an API call to OpenWeather.com. Created Python code to randomly select 500 cities from around the world. Afterwards, the data was visualized to illustrate
+                               how certain meteorological factors differ in relationship to a city's proximity to the Equator. Data obtained was for a single point in time.</p>
+                            
+                        </div>
+                    <div class="col-md-12">
+                        <p> </p>
+                        <h3><strong>Visualization</strong></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Cloud Development</h3>
+                        <p>On Earth, clouds are formed as a result of saturation of the air when it is cooled to its dew point, 
+                            or when it gains sufficient moisture (usually in the form of water vapor) from an adjacent source 
+                            to raise the dew point to the ambient temperature. Clouds tend to develop more frequently in cities
+                            that are north of the equator (20+ degree Lattitude). Click on <strong>View</strong> for the graph.  A new page will open.
+                            </p>
+                        <a href="V_Clouds.jpg" target="_blank" class="btn btn-danger">View</a>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Humidity and Lattitude</h3>
+                        <p>Relative humidity is a function of both the moisture content in the atmosphere and the actual air
+                           temperature. ... Relative humidity is calculated using meteorological variables such as vapor
+                           pressure, saturation vapor pressure, temperature and dew point. Based on the data, humidity levels                       
+                           were higher in cities north of the equator. Click on <strong>View</strong> for the graph.  A new page will open.</p>
+                        <a href="V_Humid.jpg" target="_blank" class="btn btn-danger">View</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Temperatures</h3>
+                        <p>The sun's rays hit the earth's surface at a higher angle at the equator. Temperatures drop the
+                           further an area is from the equator due to the curvature of the earth.
+                           Click on <strong>View</strong> for the graph.  A new page will open.</p>
+                        <a href="V_Temp.jpg" target="_blank" class="btn btn-danger">View</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Wind Speeds</h3>
+                        <p>Wind is caused by a difference in air pressure. The Earth has several major wind zones: 
+                            the low-latitude trade wind zone, mid-latitude west wind zone and the polar east wind zone. 
+                            Click on <strong>View</strong> for the graph.  A new page will open</p>
+                            <a href="V_Wind.jpg" target="_blank" class="btn btn-danger">View</a>
+                    </div>
+	    </div>	
+        
 
-  <p>Write a short paragraph about yourself or some placeholder text.</p>
-  <p>A second short paragraph about yourself or some placeholder text.</p>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
+        <div class="modal fade" id="contact" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Contact<h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>For general inquiries, please send an email to Francisco @ FJGalliano@gmail.com</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
